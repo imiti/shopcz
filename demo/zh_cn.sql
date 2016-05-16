@@ -1238,11 +1238,13 @@ INSERT INTO `ecs_topic` (`topic_id`, `title`, `intro`, `start_time`, `end_time`,
 --
 -- `ecs_users`
 --
-INSERT INTO `ecs_users` (`user_id`, `email`, `user_name`, `password`, `question`, `answer`, `sex`, `birthday`, `user_money`, `frozen_money`, `pay_points`, `rank_points`, `address_id`, `reg_time`, `last_login`, `last_time`, `last_ip`, `visit_count`, `user_rank`, `is_special`, `salt`, `parent_id`, `flag`, `alias`, `msn`, `qq`, `office_phone`, `home_phone`, `mobile_phone`, `is_validated`, `credit_line`) VALUES
-(1, 'ecshop@ecshop.com', 'ecshop', '554fcae493e564ee0dc75bdf2ebf94ca', '', '', 0, '1960-03-03', 0.00, 0.00, 98388, 15390, 1, 0, 1245048540, '0000-00-00 00:00:00', '0.0.0.0', 11, 0, 0, '0', 0, 0, '', '', '', '', '', '', 0, 0.00),
-(2, 'vip@ecshop.com', 'vip', '232059cb5361a9336ccf1b8c2ba7657a', '', '', 0, '1949-01-01', 0.00, 0.00, 0, 0, 0, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 0, '0', 0, 0, '', '', '', '', '', '', 0, 0.00),
-(3, 'text@ecshop.com', 'text', '1cb251ec0d568de6a929b520c4aed8d1', '', '', 0, '1949-01-01', 0.00, 0.00, 0, 0, 2, 0, 1242973574, '0000-00-00 00:00:00', '0.0.0.0', 2, 0, 0, '0', 0, 0, '', '', '', '', '', '', 0, 0.00),
-(5, 'zuanshi@ecshop.com', 'zuanshi', '815a71fb334412e7ba4595741c5a111d', '', '', 0, '1949-01-01', 0.00, 10000.00, 0, 0, 0, 0, 0, '0000-00-00 00:00:00', '', 0, 3, 0, '0', 0, 0, '', '', '', '', '', '', 0, 0.00);
+INSERT INTO `ecs_users` (`user_id`, `email`, `user_name`, `password`, `question`, `answer`, `sex`, `birthday`, `user_money`, `frozen_money`, `pay_points`, `rank_points`, `address_id`, `reg_time`, `last_login`, `last_time`, `last_ip`, `visit_count`, `user_rank`, `is_special`, `salt`, `parent_id`, `flag`, `alias`, `msn`, `qq`, `office_phone`, `home_phone`, `mobile_phone`, `is_validated`, `credit_line`, `register_rol`,
+ `course_id`, `validate_by_admin`) VALUES
+(1, 'ecshop@ecshop.com', 'ecshop', '554fcae493e564ee0dc75bdf2ebf94ca', '', '', 0, '1960-03-03', 0.00, 0.00, 98388, 15390, 1, 0, 1245048540, '0000-00-00 00:00:00', '0.0.0.0', 11, 0, 0, '0', 0, 0, '', '', '', '', '', '', 0, 0.00,
+ 1,2,1),
+(2, 'vip@ecshop.com', 'vip', '232059cb5361a9336ccf1b8c2ba7657a', '', '', 0, '1949-01-01', 0.00, 0.00, 0, 0, 0, 0, 0, '0000-00-00 00:00:00', '', 0, 0, 0, '0', 0, 0, '', '', '', '', '', '', 0, 0.00, 1,3,1),
+(3, 'text@ecshop.com', 'text', '1cb251ec0d568de6a929b520c4aed8d1', '', '', 0, '1949-01-01', 0.00, 0.00, 0, 0, 2, 0, 1242973574, '0000-00-00 00:00:00', '0.0.0.0', 2, 0, 0, '0', 0, 0, '', '', '', '', '', '', 0, 0.00,1,4,1),
+(5, 'zuanshi@ecshop.com', 'zuanshi', '815a71fb334412e7ba4595741c5a111d', '', '', 0, '1949-01-01', 0.00, 10000.00, 0, 0, 0, 0, 0, '0000-00-00 00:00:00', '', 0, 3, 0, '0', 0, 0, '', '', '', '', '', '', 0, 0.00,1,5,1);
 
 --
 -- `ecs_user_address`
@@ -1391,3 +1393,12 @@ INSERT INTO `ecs_products` (`product_id`, `goods_id`, `goods_attr`, `product_sn`
 (13, 8, '231', '', 17),
 (14, 1, '237', '', 1);
 
+INSERT INTO `ecs_courses` (`course_name`) VALUES
+('语文'),
+('数学'),
+('英语'),
+('物理'),
+('化学'),
+('生物'),
+('历史'),
+('政治');

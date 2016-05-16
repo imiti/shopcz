@@ -20,7 +20,10 @@ $data = array (
   'shop_logo' => '',
   'licensed' => '1',
   'user_notice' => '用户中心公告！',
-  'shop_notice' => '',
+  'shop_notice' => '欢迎光临手机网,我们的宗旨：诚信经营、服务客户！
+<MARQUEE onmouseover=this.stop() onmouseout=this.start() 
+scrollAmount=3><U><FONT color=red>
+<P>咨询电话010-10124444  010-21252454 8465544</P></FONT></U></MARQUEE>',
   'shop_reg_closed' => '0',
   'lang' => 'zh_cn',
   'icp_number' => '',
@@ -146,9 +149,9 @@ $data = array (
   'smtp_ssl' => '0',
   'integrate_code' => 'ecshop',
   'integrate_config' => '',
-  'hash_code' => '5cb35b2ca8b2c57cf3fa1a893e5533f2',
+  'hash_code' => '23e569348a24383be79fe9205b73644d',
   'template' => 'default',
-  'install_date' => '1462770198',
+  'install_date' => '1463378162',
   'ecs_version' => 'v2.7.3',
   'sms_user_name' => '',
   'sms_password' => '',

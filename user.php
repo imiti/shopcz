@@ -121,8 +121,8 @@ if ($action == 'register')
     $extend_info_list = $db->getAll($sql);
     $smarty->assign('extend_info_list', $extend_info_list);
 
-    $register_role = $_LANG['$register_role'];
-    $smarty->assign('isTeacher',$register_role);
+//    $register_role = $_LANG['register_role'];
+//    $smarty->assign('$isTeacher',$_LANG['register_role']);
 
     /* 验证码相关设置 */
     if ((intval($_CFG['captcha']) & CAPTCHA_REGISTER) && gd_version() > 0)

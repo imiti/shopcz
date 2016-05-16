@@ -138,6 +138,15 @@
             <span style="color:#FF0000" id="conform_password_notice"> *</span>
           </td>
         </tr>
+        <tr>
+          <td align="right"><?php echo $this->_var['lang']['register_role']; ?></td>
+          <td>
+          <select name='sel_role'>
+            <option value='1'>教师</option>
+            <option value='0'>其他</option>
+          </select>
+          </td>
+        </tr>
         <?php $_from = $this->_var['extend_info_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'field');if (count($_from)):
     foreach ($_from AS $this->_var['field']):
 ?>
@@ -165,15 +174,7 @@
           </td>
         </tr>
 		
-		<tr> 
-	  <td align="right"><?php echo $this->_var['isTeacher']; ?></td>
-	  <td>
-	  <select name='sel_role'>
-  <option value='0'>教师</option>
-  <option value='1'>其他</option>
-  </select>
-	  </td>
-	</tr>
+
 	<?php endif; ?>
 	<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
       <?php if ($this->_var['enabled_captcha']): ?>
